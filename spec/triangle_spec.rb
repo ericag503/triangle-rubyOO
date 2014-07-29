@@ -9,6 +9,12 @@ describe Triangle do
 
   it 'determines whether a triangle is equilateral' do
     test_triangle = Triangle.new(2, 2, 2)
-    test_triangle.equilateral.should eq "Equilateral"
+    test_triangle.triangle_type.should eq "Equilateral"
   end
+
+  it 'determines whether a triangle is isosceles' do
+    test_triangle = Triangle.new(2, 2, 3)
+    test_triangle.triangle_type.should eq "Isosceles"
+  end
+
 end

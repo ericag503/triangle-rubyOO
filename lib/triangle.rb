@@ -5,13 +5,13 @@ class Triangle
     @side3 = side3.to_i
   end
 
-  def equilateral
+  def triangle_type
     if @side1 == @side2 && @side2 == @side3
-     "Equilateral"
+    "Equilateral"
+   elsif @side1 == @side2 && @side2 != @side3
+    "Isosceles"
     end
   end
 end
-
-
 
 
